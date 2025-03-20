@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Main</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #E0F7FA, #C8E6C9);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+        }
+
+        .logo {
+            margin-right: 3%;
+        }
+
+        .carousel-item {
+            text-align: center;
+            background: linear-gradient(to right, #E0F7FA, #C8E6C9);
+        }
+
+        .logo1 {
+            background-color: red;
+        }
+
+        .b1 {
+            background: linear-gradient(to right, #E0F7FA, #C8E6C9);
+            width: 4%;
+            opacity: .2;
+        }
+
+        .b1:hover{
+            opacity: .4;
+        }
+
+        .row {
+            text-align: center;
+        }
+
+        .brand {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .drinks {
+            border: 3px solid #000000;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            transition: all .2s linear;
+        }
+
+        .drinks:hover{
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <img src="logo.png" alt="logo" width="5%" class="logo me-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse1">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Location
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ahmedabad</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Rajkot</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Gandhinagar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Surat</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <form class="d-flex ml-5">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignIn.html">SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignUp.html">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+            <button class="active bg-info" data-bs-target="#demo" data-bs-slide-to="0"></button>
+            <button class="bg-info" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button class="bg-info" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button class="bg-info" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <a href="CokePage.html">
+                    <img src="cocacola_logo.png" alt="Cocacola Lgo" class="logo1">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="SpritePage.html">
+                    <img src="sprite_logo.png" alt="Sprite logo" class="logo3">
+                </a>
+            </div>
+            <div class="carousel-item active">
+                <a href="FantaPage.html">
+                    <img src="fanta_logo.png" alt="Fanta logo" class="logo2">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="SwizzlePage.html">
+                    <img src="Swizzle_Logo.png" alt="Swizzle logo" class="logo4">
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev b1" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next b1" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    </section>
+    <hr>
+    <section class="sec2 mt-5">
+
+        <h1 class="brand">Brands</h1>
+        <div class="row container-fluid grid1 mt-5">
+            <div class="col-sm-4">
+                <a href="CokePage.html">
+                    <img src="cocacola_logo.png" alt="Coke logo" style="background-color: red;" class="drinks"
+                        height="70%" width="60%">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="SpritePage.html">
+                    <img src="sprite_logo.png" alt="Sprite Logo" class="drinks" height="70%" width="60%">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="SwizzlePage.html">
+                    <img src="Swizzle_Logo.png" alt="Swizzle Logo" class="drinks" height="70%" width="60%">
+                </a>
+            </div>
+        </div>
+        <div class="row container-fluid grid1 mt-4">
+            <div class="col-sm-4">
+                <a href="FantaPage.html">
+                    <img src="fanta_logo.png" alt="Fanta Logo" class="drinks" height="80%" width="65%">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#">
+                    <img src="pepsi_logo.png" alt="Pepsi logo" class="drinks" height="80%" width="60%">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#">
+                    <img src="redbull_logo.png" alt="Red Bull Logo" class="drinks" height="80%" width="59%"
+                    style="background-color: rgb(35, 50, 106);">
+                </a>
+            </div>
+        </div>
+        <div class="row container-fluid grid1 mt-4">
+            <div class="col-sm-4">
+                <a href="#">
+                    <img src="maaza_logo.png" alt="maaza logo" class="drinks" height="70%" width="65%">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#">
+                    <img src="thumbsup_logo.png" alt="Thumbs Up Logo" class="drinks" height="75%" width="60%">
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#">
+                    <img src="limca_logo.png" alt="Limca Logo" class="drinks" height="75%" width="60%">
+                </a>
+            </div>
+        </div>
+    </body>
+    
+    </html>

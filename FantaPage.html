@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Fanta</title>
+    <link rel="stylesheet" href="FantaPagestyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <img src="logo.png" alt="logo" width="5%" class="logo me-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse1">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Location
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ahmedabad</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Rajkot</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Gandhinagar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Surat</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <form class="d-flex ml-5">
+                            <input class="form-control me-2" type="search" placeholder="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <h3 class="title"> Fanta Products </h3>
+
+        <div class="products-container">
+
+            <div class="product" data-name="p-1">
+                <img src="fanta1.jpg" alt="">
+                <h3>Fanta orange</h3>
+                <div class="price">₹40.00</div>
+            </div>
+
+            <div class="product" data-name="p-2">
+                <img src="fanta2.jpg" alt="">
+                <h3>Fanta Strawberry</h3>
+                <div class="price">₹40.00</div>
+            </div>
+
+            <div class="product" data-name="p-3">
+                <img src="fanta3.jpg" alt="">
+                <h3>Fanta Grape</h3>
+                <div class="price">₹40.00</div>
+            </div>
+
+            <div class="product" data-name="p-4">
+                <img src="fanta4.jpg" alt="">
+                <h3>Fanta Pineapple</h3>
+                <div class="price">₹40.00</div>
+            </div>
+
+            <div class="product" data-name="p-5">
+                <img src="fanta5.jpg" alt="">
+                <h3>Fanta Piña Colada</h3>
+                <div class="price">₹40.00</div>
+            </div>
+
+            <div class="product" data-name="p-6">
+                <img src="fanta6.jpg" alt="">
+                <h3>Fanta Berry</h3>
+                <div class="price">₹40.00</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="products-preview">
+
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="fanta1.jpg" alt="">
+            <h3>Fanta orange</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Uncap that irresistible, made-to-share-in-every-moment, orange flavor.</p>
+            <div class="price">₹40.00</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+                <a href="#" class="cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="fanta2.jpg" alt="">
+            <h3>Fanta Strawberry</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Fanta Strawberry soda is almost like finding the most perfect strawberry out of the bunch and raising it
+                as if it were your own. Delicious. Try one today.</p>
+            <div class="price">₹40.00</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+                <a href="#" class="cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="fanta3.jpg" alt="">
+            <h3>Fanta Grape</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Do you deserve to lie down on a daybed, being fed grapes from a silver platter, one by one? Yeah you do.
+                Crack open the next best thing—a caffeine-free Fanta Grape.</p>
+            <div class="price">₹40.00</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+                <a href="#" class="cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="fanta4.jpg" alt="">
+            <h3>Fanta Pineapple</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Need to brighten your day? Take your taste buds on the sweetest of tropical vacations. Try Fanta
+                Pineapple today—a golden glow of delicious proportions.</p>
+            <div class="price">₹40.00</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+                <a href="#" class="cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="fanta5.jpg" alt="">
+            <h3>Fanta Piña Colada</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Fanta Piña Colada is like a tropical pool party—and you’re the guest of honor. An island resort for one.
+                But words only do so much. Try one today.</p>
+            <div class="price">₹40.00</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+                <a href="#" class="cart">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="fanta6.jpg" alt="">
+            <h3>Fanta Berry</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Have you ever picked berries with your bff? Collected them in a little basket and high-fived when you
+                were finished? That awesome feeling is what Fanta Berry tastes like.</p>
+            <div class="price">₹40.00</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+                <a href="#" class="cart">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let previewContainer = document.querySelector('.products-preview');
+        let previewBox = previewContainer.querySelectorAll('.preview');
+
+        document.querySelectorAll('.products-container .product').forEach(product => {
+            product.onclick = () => {
+                previewContainer.style.display = 'flex';
+                let name = product.getAttribute('data-name');
+                previewBox.forEach(preview => {
+                    let target = preview.getAttribute('data-target');
+                    if (name == target) {
+                        preview.classList.add('active');
+                    }
+                });
+            };
+        });
+
+        previewBox.forEach(close => {
+            close.querySelector('.fa-times').onclick = () => {
+                close.classList.remove('active');
+                previewContainer.style.display = 'none';
+            };
+        });
+    </script>
+</body>
+
+</html>
